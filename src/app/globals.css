@@ -19,3 +19,259 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.banner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  background-image: url('/banner.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-heading {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.banner-text {
+  padding: 1rem 0;
+  font-size: 1.125rem;
+  text-align: center;
+  max-width: 60%;
+}
+
+.banner-button {
+  background-color: #ff3366;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem;
+  padding: 3rem;
+  background-color: #f8f8f9;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  max-width: 80%;
+}
+
+.testimonial-author {
+  font-weight: bold;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  gap: 1rem;
+  padding-left: 1rem;
+  height: min(450px, auto);
+}
+
+.intro-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.companies {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 3.5rem;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 150px;
+  justify-content: center;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.company-advisor {
+  background-color: #2ea3e3;
+}
+
+.company-credit {
+  background-color: #4624e3;
+}
+
+.company-ibm {
+  background-color: #002de8;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  background-color: #5001ab;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  max-width: 80%;
+}
+/* company page */
+/* Section 1 */
+.section-future {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 2.25rem 2.5rem;
+  height: 450px;
+}
+
+.section-future h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+@media (min-width: 640px) {
+  .section-future h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-future h1 {
+    font-size: 6rem;
+  }
+}
+
+/* Section 2 */
+.section-connecting {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.75rem 0;
+  margin-top: 9rem;
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .section-connecting {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.section-connecting .left,
+.section-connecting .right {
+  width: 100%;
+  padding-left: 2.5rem;
+}
+
+.section-connecting h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.section-connecting p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .section-connecting h2 {
+    font-size: 3.5rem;
+  }
+}
+
+/* contact */
+/* Container styling */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 0;
+  background-color: #f3f4f6;
+}
+
+/* Form styling */
+.contact-form {
+  width: 100%;
+  max-width: 80%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  color: #374151;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff5f87;
+}
+
+/* Button styling */
+.contact-form button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ff5f87;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #f53868;
+}
