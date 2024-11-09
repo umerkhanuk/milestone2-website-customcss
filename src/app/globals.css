@@ -60,7 +60,9 @@ body {
   align-items: center;
   text-align: center;
 }
-
+@media(max-width:480px) {
+  .testimonial{margin: 20px !important;}
+}
 .testimonial-heading {
   font-size: 2.5rem;
   font-weight: 600;
@@ -126,6 +128,7 @@ body {
   height: 450px;
   background-color: #5001ab;
   text-align: center;
+  padding: 30px 0px;
 }
 
 .cta-text {
